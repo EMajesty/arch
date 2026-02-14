@@ -1,6 +1,7 @@
 description: Core packages and base desktop stack
 
 packages:
+  pacman:
   # Core system
   - git
   - openssh
@@ -31,6 +32,7 @@ packages:
   # Portals/desktop integration
   - xdg-desktop-portal
   - xdg-desktop-portal-hyprland
+  - xdg-desktop-portal-gtk
 
   # Hyprland extras
   - hypridle
@@ -68,6 +70,8 @@ packages:
   - ttf-jetbrains-mono-nerd
   - ttf-liberation
   - ttf-nerd-fonts-symbols
+  - ttf-roboto
+  - ttf-ubuntu-font-family
 
   # Dev tooling
   - clang
@@ -123,6 +127,50 @@ packages:
   - ark
   - cmatrix
   - irssi
+  - gvfs
+  - wpa_supplicant
+  - networkmanager
+  - nm-connection-editor
+  - network-manager-applet
+  - gnome-keyring
+  - swww
+  - adwaita-icon-theme
+  - adwaita-icon-theme-legacy
+  - adw-gtk-theme
+  - nwg-look
+  - nwg-icon-picker
+  - wl-clipboard
+  - base-devel
+  - linux-headers
+  - linux-firmware
+  - xdg-utils
+  - man-db
+  - man-pages
+  - less
+  - wget
+  - gcc
+  - llvm
+  - make
+  - ninja
+  - meson
+  - python
+  - python-pip
+  - python-virtualenv
+  - jdk-openjdk
+  - lazygit
+  - fd
+  - hackrf
+  - mpd
+  - mpd-mpris
+  - rmpc
+  - mpc
+  - yabridge
+  - yabridgectl
+  - yt-dlp
+  - wine
+  - winetricks
+  - protontricks
+  - runelite
 
  aur:
   - blueberry
@@ -133,3 +181,7 @@ packages:
   - whatsie
   - winboat
   - yay
+  - bibata-cursor-theme
+  - meshtastic-python
+  - mpd-discord-rpc
+  - mpdscribble-git

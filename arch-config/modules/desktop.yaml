@@ -1,14 +1,23 @@
 description: Desktop-only packages
 
 packages:
+  pacman:
+  - amd-ucode
   # Audio
   - bitwig-studio
   - renoise
+  - reaper
 
   # Creative
   - godot
   - kicad
+  - kicad-library
   - krita
+  - blender
 
   # Notes
   - obsidian
+  aur:
+  - orca-slicer-bin
+  - fstl
+  - stl-thumb

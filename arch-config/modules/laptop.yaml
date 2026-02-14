@@ -1,6 +1,7 @@
 description: Laptop-only packages and services
 
 packages:
+  - intel-ucode
   # Power management
   - brightnessctl
   - power-profiles-daemon
