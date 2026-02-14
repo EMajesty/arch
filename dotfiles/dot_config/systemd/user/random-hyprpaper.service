@@ -1,0 +1,11 @@
+[Unit]
+Description=Set random wallpaper with hyprpaper
+After=graphical-session.target
+PartOf=graphical-session.target
+
+[Service]
+Type=oneshot
+ExecStart=%h/.local/bin/random-hyprpaper.sh
+
+[Install]
+WantedBy=graphical-session.target
