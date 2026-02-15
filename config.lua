@@ -1,3 +1,3 @@
 return {
-    host = dcli.system.hostname(),
+    host = "host",
 }

@@ -192,6 +192,7 @@ return {
         "meshtastic-python",
         "tldr",
         "plymouth",
+        "fzf",
 
     },
     services = {

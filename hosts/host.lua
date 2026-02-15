@@ -1,7 +1,7 @@
 local hostname = dcli.system.hostname()
 local is_laptop = dcli.hardware.is_laptop()
 
-local enabled_modules = { "base" }
+local enabled_modules = { "base", "fonts", "gaming", "3dprint", "virtualization" }
 local packages = {}
 local services = { enabled = {}, disabled = {} }
 
@@ -27,24 +27,16 @@ elseif dcli.hardware.has_nvidia() then
 end
 
 if is_laptop then
-    table.insert(enabled_modules, "")
-    table.insert(packages, "tlp")
-    table.insert(packages, "tlp-rdw")
-    table.insert(packages, "powertop")
-    table.insert(packages, "acpi")
-    table.insert(packages, "acpid")
-    table.insert(services.enabled, "tlp.service")
-    table.insert(services.enabled, "acpid.service")
+    table.insert(enabled_modules, "laptop")
 else
     table.insert(enabled_modules, "musicprod")
     table.insert(enabled_modules, "gamedev")
     table.insert(enabled_modules, "creative")
-    table.insert(enabled_modules, "3dprint")
 end
 
 return {
     host = hostname,
-    description = string.format(),
+    description = string.format("%s - %s", hostname, is_laptop and "Laptop" or "Desktop"),
     enabled_modules = enabled_modules,
     packages = packages,
     services = services,
