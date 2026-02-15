@@ -12,5 +12,6 @@ return {
             "tlp.service",
             "acpid.service",
         },
+        disabled = {},
     },
 }
