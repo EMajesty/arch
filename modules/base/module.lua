@@ -12,22 +12,32 @@ return {
     packages = {
         -- Core system
         "base",
-        "git",
+        "base-devel",
         "linux",
         "linux-firmware",
-        "openssh",
+        "linux-headers",
         "zsh",
+        "git",
+        "snapper",
+        "limine",
+
+        -- Handling packages
+        "dcli",
+        "yay",
         "nix",
 
         -- Desktop/WM
         "hyprland",
         "waybar",
         "wofi",
+        "wl-clipboard",
+        "swaync",
 
         -- Terminal
         "kitty",
         "neovim",
         "tmux",
+        "tree",
 
         -- Shell and UX
         "eza",
@@ -44,7 +54,7 @@ return {
         -- Portals/desktop integration
         "xdg-desktop-portal",
         "xdg-desktop-portal-hyprland",
-        "xdg-desktop-portal-gtk",
+        -- "xdg-desktop-portal-gtk",
 
         -- Hyprland extras
         "hypridle",
@@ -61,29 +71,18 @@ return {
         "pavucontrol",
         "wiremix",
         "wireplumber",
+        "mpd-discord-rpc",
+        "mpdscribble-git",
+        "mpd",
+        "mpd-mpris",
+        "rmpc",
+        "mpc",
+        "spotify",
 
         -- Bluetooth
         "bluez",
         "blueman",
-
-        -- Notifications
-        "swaync",
-
-        -- Fonts
-        "adobe-source-sans-fonts",
-        "adobe-source-serif-fonts",
-        "cantarell-fonts",
-        "noto-fonts",
-        "noto-fonts-cjk",
-        "noto-fonts-emoji",
-        "noto-fonts-extra",
-        "ttf-dejavu",
-        "ttf-firacode-nerd",
-        "ttf-jetbrains-mono-nerd",
-        "ttf-liberation",
-        "ttf-nerd-fonts-symbols",
-        "ttf-roboto",
-        "ttf-ubuntu-font-family",
+        "blueberry",
 
         -- Dev tooling
         "clang",
@@ -92,75 +91,6 @@ return {
         "jq",
         "openai-codex",
         "rustup",
-
-        -- Containers/virtualization
-        "docker",
-        "docker-compose",
-        "libvirt",
-        "qemu-full",
-        "virt-manager",
-        "virt-viewer",
-
-        -- Remote access
-        "freerdp",
-        "remmina",
-
-        -- Networking/VPN
-        "mullvad-vpn",
-
-        -- System tools
-        "btop",
-        "efibootmgr",
-        "evtest",
-        "ntfs-3g",
-        "rtkit",
-
-        -- Archives/compression
-        "7zip",
-        "unzip",
-        "xz",
-        "zip",
-
-        -- Media/graphics
-        "feh",
-        "ffmpegthumbnailer",
-        "tumbler",
-        "zathura",
-
-        -- Apps
-        "discord",
-        "qbittorrent",
-        "rpi-imager",
-        "steam",
-        "telegram-desktop",
-        "zen-browser",
-        "obsidian",
-
-        -- Misc
-        "age",
-        "ark",
-        "cmatrix",
-        "irssi",
-        "gvfs",
-        "wpa_supplicant",
-        "networkmanager",
-        "nm-connection-editor",
-        "network-manager-applet",
-        "gnome-keyring",
-        "swww",
-        "adwaita-icon-theme",
-        "adwaita-icon-theme-legacy",
-        "adw-gtk-theme",
-        "nwg-look",
-        "nwg-icon-picker",
-        "wl-clipboard",
-        "base-devel",
-        "linux-headers",
-        "xdg-utils",
-        "man-db",
-        "man-pages",
-        "less",
-        "wget",
         "gcc",
         "llvm",
         "make",
@@ -171,32 +101,105 @@ return {
         "python-virtualenv",
         "jdk-openjdk",
         "lazygit",
+        "lua",
+        "luajit",
+
+        -- Remote access
+        "freerdp",
+        "remmina",
+
+        -- Networking/VPN
+        "curl",
+        "wget",
+        "openssh",
+        "mullvad-vpn",
+        "wpa_supplicant",
+        "networkmanager",
+        "nm-connection-editor",
+        "network-manager-applet",
+        "smbclient",
+
+        -- System tools
+        "btop",
+        "efibootmgr",
+        "evtest",
+        "ntfs-3g",
+        "rtkit",
+        "cifs-utils",
+        "cups",
+        "cups-pdf",
+        "cups-filters",
+        "cups-browsed",
+        "system-config-printer",
+
+        -- Archives/compression
+        "7zip",
+        "unzip",
+        "xz",
+        "zip",
+        "ark",
+
+        -- Media/graphics
+        "feh",
+        "ffmpegthumbnailer",
+        "ffmpegthumbs",
+        "tumbler",
+        "zathura",
+        "eom",
+        "foliate",
+        "calibre-bin",
+        "mpc-qt",
+        "obs-studio",
+
+        -- Apps
+        "discord",
+        "qbittorrent",
+        "rpi-imager",
+        "telegram-desktop",
+        "zen-browser-bin",
+        "obsidian",
+        "whatsdesk-bin",
+        "irssi",
+        "tuxguitar",
+
+        -- Appearance
+        "adwaita-icon-theme",
+        "adwaita-icon-theme-legacy",
+        "bibata-cursor-theme",
+        "adw-gtk-theme",
+        "nwg-look",
+        "nwg-icon-picker",
+
+        -- Misc
+        "age",
+        "cmatrix",
+        "gvfs",
+        "gnome-keyring",
+        "swww",
+        "xdg-utils",
+        "man-db",
+        "man-pages",
+        "less",
         "fd",
         "hackrf",
-        "mpd",
-        "mpd-mpris",
-        "rmpc",
-        "mpc",
-        "yabridge",
-        "yabridgectl",
         "yt-dlp",
         "wine",
         "winetricks",
-        "protontricks",
-        "runelite",
-
-        -- AUR (installed via aur_helper)
-        "blueberry",
-        "mpc-qt",
+        "bottles",
         "pokeget",
         "ventoy-bin",
         "vial-git",
-        "whatsie",
-        "winboat",
-        "yay",
-        "bibata-cursor-theme",
         "meshtastic-python",
-        "mpd-discord-rpc",
-        "mpdscribble-git",
+        "tldr",
+        "plymouth",
+
+    },
+    services = {
+        enabled = {
+            "mullvad-daemon.service",
+            "bluetooth.service",
+            "cups.service",
+            "avahi-daemon.service",
+        },
     },
 }
