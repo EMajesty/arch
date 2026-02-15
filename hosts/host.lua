@@ -3,7 +3,7 @@ local is_laptop = dcli.hardware.is_laptop()
 
 local enabled_modules = { "base", "fonts", "gaming", "3dprint", "virtualization" }
 local packages = {}
-local services = { enabled = { "ly@tty1" }, disabled = { "getty@tty1" } }
+local services = { enabled = { "ly@tty1.service" }, disabled = { "getty@tty1.service" } }
 
 local cpu = dcli.hardware.cpu_vendor()
 
