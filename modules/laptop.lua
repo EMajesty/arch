@@ -6,6 +6,7 @@ return {
         "powertop",
         "acpi",
         "acpid",
+        "brightnessctl",
     },
     services = {
         enabled = {

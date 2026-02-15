@@ -194,7 +194,7 @@ return {
         "tldr",
         "plymouth",
         "fzf",
-
+        "durdraw",
     },
     services = {
         enabled = {
@@ -202,7 +202,10 @@ return {
             "bluetooth.service",
             "cups.service",
             "avahi-daemon.service",
-            "ly.service",
+            "ly@tty1.service",
+        },
+        disabled = {
+            "getty@tty1.service",
         },
     },
 }
