@@ -11,6 +11,7 @@ return {
         "zsh",
         "git",
         "snapper",
+        "limine",
 
         -- Handling packages
         "dcli",
