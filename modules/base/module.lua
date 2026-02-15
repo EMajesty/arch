@@ -71,7 +71,7 @@ return {
         "pavucontrol",
         "wiremix",
         "wireplumber",
-        "mpd-discord-rpc",
+        -- "mpd-discord-rpc",
         "mpdscribble-git",
         "mpd",
         "mpd-mpris",
