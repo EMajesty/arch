@@ -1,0 +1,13 @@
+partial alphanumeric_keys
+xkb_symbols "basic" {
+    include "us(basic)" // inherit US layout
+
+    // Modify 'a' key (<AC01>) for ä and Ä
+    key <AC01> { [ a, A, adiaeresis, Adiaeresis ] };
+
+    // Modify 'o' key (<AD09>) for ö and Ö
+    key <AD09> { [ o, O, odiaeresis, Odiaeresis ] };
+
+    include "level3(ralt_switch)" // enables RAlt as level 3 switch
+};
+
