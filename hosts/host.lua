@@ -41,16 +41,16 @@ return {
     packages = packages,
     services = services,
 
-    default_apps = {
-        scope = "system",
-        browser = "zen",
-        text_editor = "nvim",
-        file_manager = "nautilus",
-        terminal = "kitty",
-        video_player = "mpc-qt",
-        image_viewer = "feh",
-        pdf_viewer = "zathura",
-    },
+    -- default_apps = {
+    --     scope = "system",
+    --     browser = "zen",
+    --     text_editor = "nvim",
+    --     file_manager = "nautilus",
+    --     terminal = "kitty",
+    --     video_player = "mpc-qt",
+    --     image_viewer = "feh",
+    --     pdf_viewer = "zathura",
+    -- },
     config_backups = {
         enabled = true,
         max_backups = 5,
