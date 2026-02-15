@@ -28,7 +28,7 @@ After first boot:
 ### 1) Run the script
 
 ```bash
-curl -fsSL "https://dev.electri.cc" | sh
+sh <(curl -fsSL "https://dev.electri.cc")
 ```
 
 ### 2) Reboot
