@@ -20,6 +20,7 @@ return {
         "git",
         "snapper",
         "limine",
+        "ly",
 
         -- Handling packages
         "dcli",
@@ -201,6 +202,7 @@ return {
             "bluetooth.service",
             "cups.service",
             "avahi-daemon.service",
+            "ly.service",
         },
     },
 }
